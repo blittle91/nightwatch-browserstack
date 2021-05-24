@@ -19,5 +19,9 @@
     "browserstack-local": "^1.3.7",
     "nightwatch": "^1.3.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.2.1",
+    "nightwatch-api": "^3.0.2"
+  }
 }

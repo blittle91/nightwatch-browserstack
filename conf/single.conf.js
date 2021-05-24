@@ -14,7 +14,12 @@ nightwatch_config = {
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
         'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
         'browserstack.debug': true,
-        'browser': 'chrome'
+        'browserstack.geoLocation': "GB",
+        'device': 'Samsung Galaxy S21 Plus',
+        "os_version": "11.0",
+        'os': 'android',
+        'browser': 'Android',
+        'realMobile': true
       }
     }
   }

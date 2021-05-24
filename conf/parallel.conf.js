@@ -11,7 +11,8 @@ nightwatch_config = {
     'build': 'browserstack-build-1',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
-    'browserstack.debug': true
+    'browserstack.debug': true,
+    'browserstack.geoLocation': "GB"
   },
 
   test_settings: {
