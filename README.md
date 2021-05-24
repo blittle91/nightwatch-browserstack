@@ -31,4 +31,9 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
 
 ## ToDo
 
-* Integrate Cucumber
+* Cucumber 
+running local testing with BS 
+
+```
+BROWSERSTACK_USERNAME=xxxxx BROWSERSTACK_ACCESS_KEY=xxxx ./scripts/local.runner.js -c conf/local.conf.js
+```

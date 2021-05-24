@@ -4,7 +4,7 @@ nightwatch_config = {
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
-    "port" : 80
+    "port" : 443
   },
 
   test_settings: {
@@ -19,7 +19,8 @@ nightwatch_config = {
         "os_version": "11.0",
         'os': 'android',
         'browser': 'Android',
-        'realMobile': true
+        'realMobile': true,
+        'browserstack.local': true,
       }
     }
   }
