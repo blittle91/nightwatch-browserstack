@@ -6,7 +6,7 @@ nightwatch_config = {
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
-    "port" : 80
+    "port" : 443
   },
 
   common_capabilities: {
@@ -19,20 +19,9 @@ nightwatch_config = {
   },
 
   test_settings: {
-    default: {},
-    chrome: {
+    default: {
       desiredCapabilities: {
         browser: "chrome"
-      }
-    },
-    firefox: {
-      desiredCapabilities: {
-        browser: "firefox"
-      }
-    },
-    safari: {
-      desiredCapabilities: {
-        browser: "safari"
       }
     }
   }

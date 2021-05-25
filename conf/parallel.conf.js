@@ -4,22 +4,31 @@ nightwatch_config = {
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
-    "port" : 80
+    "port" : 443
   },
 
   common_capabilities: {
-    'build': 'browserstack-build-1',
+    'build': 'browserstack-testlocal',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     'browserstack.debug': true,
-    'browserstack.geoLocation': "GB"
+    'browserstack.geoLocation': "GB",
+    'browserstack.local': true,
+    
   },
 
   test_settings: {
     default: {},
     chrome: {
       desiredCapabilities: {
-        browser: "chrome"
+        'browserstack.debug': true,
+        'browserstack.geoLocation': "GB",
+        'device': 'Samsung Galaxy S21 Plus',
+        "os_version": "11.0",
+        'os': 'android',
+        'browser': 'Android',
+        'realMobile': true,
+        'browserstack.local': true
       }
     },
     firefox: {

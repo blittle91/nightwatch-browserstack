@@ -16,7 +16,7 @@
     "url": "https://github.com/browserstack/nightwatch-browserstack"
   },
   "dependencies": {
-    "browserstack-local": "^1.3.7",
+    "browserstack-local": "^1.4.8",
     "nightwatch": "^1.3.4"
   },
   "license": "MIT",
