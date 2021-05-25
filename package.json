@@ -9,7 +9,8 @@
     "local": "node scripts/local.runner.js -c conf/local.conf.js",
     "parallel": "./node_modules/.bin/nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
     "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari",
-    "suite": "./node_modules/.bin/nightwatch -c conf/suite.conf.js"
+    "suite": "./node_modules/.bin/nightwatch -c conf/suite.conf.js",
+    "bdd": "node scripts/local.runner.js -c conf/cucumber.conf.js -e chrome,firefox,safari"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "dependencies": {
     "browserstack-local": "^1.4.8",
+    "chromedriver": "^90.0.1",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^5.4.0",
+    "cucumber-pretty": "^6.0.0",
+    "geckodriver": "^2.0.0",
     "nightwatch": "^1.3.4"
   },
   "license": "MIT",
